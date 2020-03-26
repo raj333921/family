@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<h2>VARIKUNTA/VARIKUNTLA FAMILY</h2>
+<p>Its a family tree from Varikuntla/Varikunta from Santhanuthalapadu </p>
+<p>Click on the arrow(s) to open or close</p>
+
+<ul id="myUL">
+  <li><span class="caret" style="color:red">ADHEYYA & DASARI RANGANAYAKAMA </span>
+    <ul class="nested">
+      <li><span class="caret"><span style="color:red">KOTESWARAMMA & DASARI KRISHNAIAH</span></span></li>
+      <li><span class="caret"><span style="color:red">OBAYYA</span> & CHITTEMSETTY ANKAMMA</span>
+        <ul class="nested">
+          <li><span class="caret">HANUMANTHA RAO & DASARI LAKSHMI</span>
+           <ul class="nested">
+           	<li> <span class="caret">RAJESH KUMAR & EDIMADAKALA SRILAKSHMI</span>
+            <ul class="nested">
+             <li>SAI SAHASRA</li>
+            </ul>
+            </li>
+           </ul>
+          </li>
+          <li><span class="caret">SIVA PRASAD & CHITTEMSETTY KOTESWARI</span>
+           <ul class="nested">
+           	<li>KHAJA SAMPATH</li>
+            </ul>
+            </li>
+          <li><span style="color:red">SREENU</span></li>
+          <li><span class="caret">PADMAVATHI & VUTUKURU SRIDHAR(VASU)</span>
+           <ul class="nested">
+           	<li>V.VIVEK</li>
+            <li>V.SAI</li>
+           </ul>
+          </li>
+          <li>NAGARAJU & SARITHA</li>
+        </ul>
+      </li>
+      <li><span class="caret">SUBRAMANYAM & <span style="color:red">VEMULAPATI SUBBAMA</span></span>
+      <ul class="nested">
+           	<li><span class="caret"><span style="color:red">PITCHAIAH</span> & KRISHNA KUMARI</span>
+            <ul class="nested">
+            <li><span class="caret">MADHAVI & DASARI KOTESWARAO</span>
+            <ul class="nested">
+            <li>NTA</li>
+            </ul>
+            </li>
+            <li> <span class="caret">SIVA & JYOTHI</span>
+            	<ul class="nested">
+            <li>NTA</li>
+            <li>NTA</li>
+            </ul>
+            </li>
+            <li><span class="caret">SUREKA & </span>
+            <ul class="nested">
+            <li>NTA</li>
+            <li>NTA</li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            <li><span class="caret">AMMANI & DASARI RAJARAO</span>
+            <ul class="nested">
+            <li><span class="caret">SARADA & <span style="color:red">GUNTAKA BADRI</span></span>
+            <ul class="nested">
+            <li>HEMANTH</li>
+            <li>NTA</li>
+            </ul>
+            </li>
+            <li>DEEPTHI & </li>
+            <li>SAI KRISHNA </li>
+            </ul>
+            </li>
+            <li><span class="caret">PARVATHI & DASARI MOHANRAO</span>
+            <ul class="nested">
+            <li>D.SAI KISHORE</li>
+            <li>D.RAMESH</li>
+            <li><span class="caret">D.SRAVANI & MADISETTI SUDHEER</span>
+             <ul class="nested">
+            <li>NTA</li>
+            </ul>
+            </li>
+            </ul>
+            <li><span class="caret">SREENU & VEMULAPATI VIJAYALAKSHMI</span>
+            <ul class="nested">
+            <li><span style="color:red">SWAPNA</span></li>
+            <li>SUMANTH</li>
+            </ul>
+            </li>
+             <li><span style="color:red">VENKATESWARLU</span></li>
+           </ul>
+      </li>
+      <li><span class="caret"><span style="color:red">RADHAYA</span>& DASARI ANJAMA
+      </span>
+      <ul class="nested">
+            <li><span class="caret">KRISHNA & SUDHA</span>
+             <ul class="nested">
+             <li>SAITEJA</li>
+             <li>POOJA & </li>
+             </ul>
+            </li>
+            <li><span class="caret">NAGAMANI & CHITTEMSETTI VENKATA RAMANA</span>
+            <ul class="nested">
+             <li>CH.PAVANI & BUDDATI MALLI</li>
+             <li>CH.VAMSI</li>
+             </ul>
+            </li>
+            <li><span class="caret">PARSURAM & CHITTEMSETTI SUSEELA</span>
+            <ul class="nested">
+             <li>NTA</li>
+             <li>NTA</li>
+             </ul>
+            </li>
+            </ul>
+      </li>
+      <li><span style="color:red">RANGANAYAKULU</span>& VUTUKURU GEETHA</li>
+      <li>CHALAPATHI & DASARI AMMANAMA</li>
+      <li>PRAKASA RAO & VUTUKURU DEVI</li>
+      <li><span style="color:red">NAGASWARA RAO</span> & CHAKIRALA PADMAVATHI</li>    
+    </ul>
+  </li>
+</ul>
+
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+</body>
+</html>
