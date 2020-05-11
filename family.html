@@ -1,99 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Trail</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="myscript.css">
 <style>
-ul, #myUL {
-  list-style-type: none;
-}
 
-#myUL {
-  margin: 0;
-  padding: 0;
-}
-
-.caret {
-  cursor: pointer;
-  -webkit-user-select: none; /* Safari 3.1+ */
-  -moz-user-select: none; /* Firefox 2+ */
-  -ms-user-select: none; /* IE 10+ */
-  user-select: none;
-}
-
-.caret::before {
-  content: "\25B6";
-  color: black;
-  display: inline-block;
-  margin-right: 6px;
-}
-
-.caret-down::before {
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -webkit-transform: rotate(90deg); /* Safari */'
-  transform: rotate(90deg);  
-}
-
-.nested {
-  display: none;
-}
-
-.active {
-  display: block;
-}
 </style>
 </head>
-<body>
+<body id="back">
 
-<h2>VARIKUNTA/VARIKUNTLA FAMILY</h2>
-<p>Its a family tree from Varikuntla/Varikunta from Santhanuthalapadu </p>
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" style="width:200px;right:0;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Theme  <label class="switch">
+  <input type="checkbox" onclick="theme()">
+  <span class="slider round"></span>
+</label></a>
+</div>
+
+<div class="w3-main" style="margin-right:200px;">
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container" id="w3-container">
+    <h1 id="abc" style="color:black;">My Family Tree</h1>
+  </div>
+</div>
+</div>
+<p>Its a family tree from Varikunta/Varikuntla from Santhanuthalapadu few are settled in SANTHANUTHALAPADU,ONGOLE,NELLORE and different places of Andhrapradesh </p>
 <p>Click on the arrow(s) to open or close</p>
 
 <ul id="myUL">
-  <li><span class="caret" style="color:red">ADHEYYA & DASARI RANGANAYAKAMA </span>
+  <li><span class="caret" style="color:red">VARIKUNTA ADEIAH H/O: RANGANAYAKAMMA DASARI</span>
     <ul class="nested">
-      <li><span class="caret"><span style="color:red">KOTESWARAMMA & DASARI KRISHNAIAH</span></span></li>
-      <li><span class="caret"><span style="color:red">OBAYYA</span> & CHITTEMSETTY ANKAMMA</span>
-        <ul class="nested">
-          <li><span class="caret">HANUMANTHA RAO & DASARI LAKSHMI</span>
-           <ul class="nested">
-           	<li> <span class="caret">RAJESH KUMAR & EDIMADAKALA SRILAKSHMI</span>
+      <li><span class="caret"><span style="color:red">1. VARIKUNTA KOTESWARAMMA W/O: DASARI KRISHNAIAH</span></span>
+<ul class="nested">
+<li><span class="caret"><span style="color:red">1.DASARI RAJARAO</span> H/O: VARIKUNTA AMMANI</span>
             <ul class="nested">
-             <li>SAI SAHASRA</li>
+            <li><span class="caret">1. D.SARADA &amp; <span style="color:red">W/O:BADRI GUNTAKA</span></span>
+            <ul class="nested">
+            <li>1. GUNTAKA HEMANTH</li>
+            <li>2. NTA</li>
+            </ul>
+            </li>
+            <li>2. D.DEEPTHI W/O: </li>
+            <li>3. D.SAI KRISHNA </li>
+            </ul>
+</li>
+</ul>
+</li>
+      <li><span class="caret"><span style="color:red">2. OBAIAH</span> H/O: ANKAMMA CHITTEMSETTY</span>
+        <ul class="nested">
+          <li><span class="caret">1. HANUMANTHA RAO H/O: LAKSHMI DASARI</span>
+           <ul class="nested">
+           	<li> <span class="caret">1. RAJESH KUMAR H/O: SRILAKSHMI EDIMADAKALA</span>
+            <ul class="nested">
+             <li>1. SAI SAHASRA</li>
             </ul>
             </li>
            </ul>
           </li>
-          <li><span class="caret">SIVA PRASAD & CHITTEMSETTY KOTESWARI</span>
+          <li><span class="caret">2. SIVA PRASAD H/O: KOTESWARI CHITTEMSETTY</span>
            <ul class="nested">
-           	<li>KHAJA SAMPATH</li>
+           	<li>1. KHAJA SAMPATH</li>
             </ul>
             </li>
-          <li><span style="color:red">SREENU</span></li>
-          <li><span class="caret">PADMAVATHI & VUTUKURU SRIDHAR(VASU)</span>
+          <li><span style="color:red">3. SREENU</span></li>
+          <li><span class="caret">4. PADMAVATHI W/O: SRIDHAR(VASU) VUTUKURU </span>
            <ul class="nested">
-           	<li>V.VIVEK</li>
-            <li>V.SAI</li>
+           	<li>1. V.VIVEK</li>
+            <li>2. V.SAI PAVAN</li>
            </ul>
           </li>
-          <li>NAGARAJU & SARITHA</li>
+          <li>5. NAGARAJU H/O: SARITHA</li>
         </ul>
       </li>
-      <li><span class="caret">SUBRAMANYAM & <span style="color:red">VEMULAPATI SUBBAMA</span></span>
+      <li><span class="caret">3. SUBRAHMANYAM <span style="color:red">H/O: SUBBAMMA VEMULAPATI</span></span>
       <ul class="nested">
-           	<li><span class="caret"><span style="color:red">PITCHAIAH</span> & KRISHNA KUMARI</span>
+           	<li><span class="caret"><span style="color:red">1. PITCHAIAH</span> H/O: KRISHNA KUMARI</span>
             <ul class="nested">
-            <li><span class="caret">MADHAVI & DASARI KOTESWARAO</span>
+            <li><span class="caret">1. MADHAVI W/O: DASARI KOTESWARAO</span>
             <ul class="nested">
             <li>NTA</li>
             </ul>
             </li>
-            <li> <span class="caret">SIVA & JYOTHI</span>
+            <li> <span class="caret">2. SIVA H/O: JYOTHI</span>
             	<ul class="nested">
             <li>NTA</li>
             <li>NTA</li>
             </ul>
             </li>
-            <li><span class="caret">SUREKA & </span>
+            <li><span class="caret">3. SUREKA W/O: </span>
             <ul class="nested">
             <li>NTA</li>
             <li>NTA</li>
@@ -101,71 +97,154 @@ ul, #myUL {
             </li>
             </ul>
             </li>
-            <li><span class="caret">AMMANI & DASARI RAJARAO</span>
+            <li><span class="caret">2. AMMANI W/O: <span style="color:red">DASARI RAJARAO</span></span>
             <ul class="nested">
-            <li><span class="caret">SARADA & <span style="color:red">GUNTAKA BADRI</span></span>
+            <li><span class="caret">1. SARADA W/O: <span style="color:red">GUNTAKA BADRI</span></span>
             <ul class="nested">
             <li>HEMANTH</li>
             <li>NTA</li>
             </ul>
             </li>
-            <li>DEEPTHI & </li>
-            <li>SAI KRISHNA </li>
+            <li>2. DEEPTHI W/O: </li>
+            <li>3. D.SAI KRISHNA </li>
             </ul>
             </li>
-            <li><span class="caret">PARVATHI & DASARI MOHANRAO</span>
+            <li><span class="caret">3. PARVATHI W/O: MOHANRAO DASARI </span>
             <ul class="nested">
-            <li>D.SAI KISHORE</li>
-            <li>D.RAMESH</li>
-            <li><span class="caret">D.SRAVANI & MADISETTI SUDHEER</span>
+            <li>1. D.SAI KISHORE</li>
+            <li>2. D.RAMESH</li>
+            <li><span class="caret">3. D.SRAVANI W/O: SUDHEER MADISETTI</span>
              <ul class="nested">
-            <li>NTA</li>
+            <li>1. M.LOUKHYASRI</li>
             </ul>
             </li>
             </ul>
-            <li><span class="caret">SREENU & VEMULAPATI VIJAYALAKSHMI</span>
+            </li><li><span class="caret">4. SREENU H/O: VIJAYALAKSHMI VEMULAPATI</span>
             <ul class="nested">
-            <li><span style="color:red">SWAPNA</span></li>
-            <li>SUMANTH</li>
+            <li><span style="color:red">1. SWAPNA</span></li>
+            <li>2. MANIDEEPU</li>
             </ul>
             </li>
-             <li><span style="color:red">VENKATESWARLU</span></li>
+             <li><span style="color:red">5. VENKATESWARLU</span></li>
            </ul>
       </li>
-      <li><span class="caret"><span style="color:red">RADHAYA</span>& DASARI ANJAMA
+      <li><span class="caret"><span style="color:red">4. RADHAKRISNAIAH</span> H/O: ANJAMMA DASARI
       </span>
       <ul class="nested">
-            <li><span class="caret">KRISHNA & SUDHA</span>
+            <li><span class="caret">1. KRISHNA H/O: SUDHA</span>
              <ul class="nested">
-             <li>SAITEJA</li>
-             <li>POOJA & </li>
+             <li>1. SAITEJA</li>
+             <li>2. POOJA W/O: </li>
              </ul>
             </li>
-            <li><span class="caret">NAGAMANI & CHITTEMSETTI VENKATA RAMANA</span>
+            <li><span class="caret">2. NAGAMANI W/O: VENKATA RAMANA CHITTEMSETTI </span>
             <ul class="nested">
-             <li>CH.PAVANI & BUDDATI MALLI</li>
-             <li>CH.VAMSI</li>
+             <li><span class="caret">1. CH.PAVANI W/O: MALLI BUDDATI </span>
+		<ul class="nested">
+             <li>NTA</li>
+             </ul>
+		</li>
+             <li>2. CH.VAMSI</li>
              </ul>
             </li>
-            <li><span class="caret">PARSURAM & CHITTEMSETTI SUSEELA</span>
+            <li><span class="caret">3. PARSURAM H/O: SUSEELA CHITTEMSETTI</span>
             <ul class="nested">
-             <li>NTA</li>
-             <li>NTA</li>
+             <li>1. LALI </li>
+             <li>2. </li>
              </ul>
             </li>
             </ul>
       </li>
-      <li><span style="color:red">RANGANAYAKULU</span>& VUTUKURU GEETHA</li>
-      <li>CHALAPATHI & DASARI AMMANAMA</li>
-      <li>PRAKASA RAO & VUTUKURU DEVI</li>
-      <li><span style="color:red">NAGASWARA RAO</span> & CHAKIRALA PADMAVATHI</li>    
+      <li><span class="caret"><span style="color:red">5. RANGANAYAKULU</span> H/O: GEETHA VUTUKURU</span>
+<ul class="nested"> 	
+<li><span class="caret">1. LAKSHMI W/O: VENKATESWARLU VUTUKURU</span>
+            <ul class="nested">
+             <li>1. V.HARSHA</li>
+             <li>2. V.PRUDHVI</li>
+             </ul>
+            </li>
+<li><span class="caret">2. SURESH H/O: SANDHYA VUTUKURU</span>
+            <ul class="nested">
+             <li>1. YASWANTH RAJ</li>
+             <li>2. LAHARI</li>
+             </ul>
+            </li>
+ <li><span class="caret">3. RAMESH H/O: ARUNA CHITTEMSETTI</span>
+            <ul class="nested">
+             <li>1. ESHWAR</li>
+             <li>2. PRANATHI</li>
+             </ul>
+            </li>
+ <li><span class="caret">3. HAZARATH H/O: DIVYA BATHINI </span>
+            <ul class="nested">
+             <li>1. MUKESH</li>
+             <li>2. RITHIKA</li>
+             </ul>
+            </li>
+</ul>
+	</li>
+
+
+
+      <li><span class="caret">6. CHALAPATHI RAO H/O: AMMANAMA DASARI</span>
+<ul class="nested"> 	
+<li><span class="caret">1. SRINIVAS H/O: KAMAKSHI CHITTEMSETTI</span>
+            <ul class="nested">
+             <li>NTA</li>
+             <li>NTA</li>
+	     <li>NTA</li>
+             </ul>
+            </li>
+<li>2. SHANTI        
+            </li>
+ <li>3. SAI BABU
+            </li>
+</ul>
+</li>
+      <li><span class="caret">7. PRAKASA RAO H/O: NIRMALA DEVI VUTUKURU</span>
+<ul class="nested">
+<li><span class="caret">1. ANURADHA W/O: ARUN</span>
+            <ul class="nested">
+             <li>NTA</li>
+             <li>NTA</li>
+             </ul>
+            </li>
+<li><span class="caret">2. RAVI H/O: </span>
+            <ul class="nested">
+             <li>NTA</li>
+             <li>NTA</li>
+             </ul>
+            </li>
+<li><span class="caret">3. SASI W/O: </span>
+            <ul class="nested">
+             <li>NTA</li>
+             <li>NTA</li>
+             </ul>
+            </li>
+</ul>
+</li>
+      <li><span class="caret"><span style="color:red">8. NAGASWARA RAO</span> H/O: PADMAVATHI CHAKIRALA</span>
+<ul class="nested">
+<li>1. PRASAD H/O: JYOTHI DASARI            
+            </li>
+<li><span class="caret">2. ANJANA W/O: </span>
+            <ul class="nested">
+             <li>NTA</li>
+             <li>NTA</li>
+             </ul>
+            </li>
+</ul>
+</li>    
     </ul>
   </li>
 </ul>
 
+
 <script>
+document.getElementById("mySidebar").style.boxShadow="10px 20px 30px black";
 var toggler = document.getElementsByClassName("caret");
 var i;
+var j=0;
 
 for (i = 0; i < toggler.length; i++) {
   toggler[i].addEventListener("click", function() {
@@ -173,7 +252,31 @@ for (i = 0; i < toggler.length; i++) {
     this.classList.toggle("caret-down");
   });
 }
-</script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+function theme(){
+if(j == 0 )
+{
+	document.body.style.backgroundColor="#333333";
+	document.body.style.color="white";
+	document.getElementById("mySidebar").style.backgroundColor = "#333333";
+document.getElementById("mySidebar").style.boxShadow="10px 20px 30px #555555";
+	j=1;
+}
+else
+{
+	document.body.style.backgroundColor="white";
+	document.getElementById("mySidebar").style.backgroundColor = "white";
+	document.body.style.color="#333333";
+	j=0;
+}
+}
+</script>
+     
 </body>
 </html>
